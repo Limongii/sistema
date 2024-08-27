@@ -1,0 +1,217 @@
+/* Estilo geral do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Cor de fundo neutra */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container do formulário */
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Largura máxima do formulário */
+    box-sizing: border-box;
+    position: relative; /* Para posicionar os botões de envio e voltar */
+}
+
+/* Título do formulário */
+.container h1 {
+    margin: 0 0 20px;
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Rótulos do formulário */
+.container label {
+    display: block;
+    margin: 15px 0 5px;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Campos de entrada */
+.container input[type="text"],
+.container input[type="number"],
+.container select {
+    width: calc(100% - 24px); /* Ajustado para deixar o campo menor */
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Campo de entrada "Placa" e "Hodômetro" */
+.container input#placa,
+.container input#hodometro {
+    width: calc(50% - 16px); /* Diminuído para menor largura */
+}
+
+/* Botão de envio e botão de voltar no rodapé */
+.container .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Espaço acima dos botões */
+}
+
+.container .button-container input[type="submit"],
+.container .button-container button {
+    width: 48%; /* Largura dos botões */
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.container .button-container input[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.container .button-container input[type="submit"]:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.container .button-container input[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.5);
+}
+
+.container .button-container input[type="submit"]:active {
+    background-color: #1e7e34;
+    transform: scale(0.98);
+}
+
+.container .button-container button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.container .button-container button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.container .button-container button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5);
+}
+
+.container .button-container button:active {
+    background-color: #004085;
+    transform: scale(0.98);
+}
+
+/* Estilo específico para campos ocultos */
+input[type="hidden"] {
+    display: none;
+}
+
+
+
+/* Estilo geral do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container da página de boas-vindas */
+.welcome-container {
+    text-align: center;
+}
+
+/* Container para os botões */
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+    gap: 20px; /* Espaço entre os botões */
+    max-width: 500px; /* Largura máxima do container dos botões */
+    margin: 0 auto; /* Centraliza o container */
+    margin-bottom: 30px; /* Espaço abaixo da grade de botões */
+}
+
+/* Estilo dos botões */
+.button-container a {
+    display: block;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-container a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.button-container a:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5);
+}
+
+.button-container a:active {
+    background-color: #004085;
+    transform: scale(0.98);
+}
+
+/* Estilo específico para o botão "Sair" */
+.button-logout {
+    background-color: #dc3545;
+    padding: 15px 20px; /* Ajuste do padding para ficar consistente com os outros botões */
+    display: inline-block; /* Mantém o botão do mesmo tamanho dos outros */
+    margin: 0 auto; /* Centraliza o botão */
+    text-align: center;
+}
+
+.button-logout:hover {
+    background-color: #c82333;
+}
+
+.button-logout:active {
+    background-color: #bd2130;
+}
+
+/* Estilo específico para o botão "Sair" */
+.button-logout {
+    background-color: #dc3545;
+    padding: 15px 20px; /* Ajuste do padding para ficar consistente com os outros botões */
+    display: inline-block; /* Mantém o botão do mesmo tamanho dos outros */
+    margin: 0 auto; /* Centraliza o botão */
+    text-align: center;
+    border-radius: 12px; /* Arredondamento das bordas do botão "Sair" */
+}
+
+.button-logout:hover {
+    background-color: #c82333;
+}
+
+.button-logout:active {
+    background-color: #bd2130;
+}
+
